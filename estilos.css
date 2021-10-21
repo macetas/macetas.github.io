@@ -14,7 +14,7 @@ header, #proximamente {
 }
 
 #macetero {
-  margin: 20px auto;
+  margin: 20px auto 10px auto;
   width: 100%;
   max-width: 586px;
   height: auto;
@@ -33,11 +33,11 @@ header p {
 
 iframe {
     display: block;
-    margin: 120px auto;
+    margin: 100px auto;
     width: 569px;
     height: 315px;
-    max-width: 94vw;
-    max-height: 52.25vw;
+    max-width: 90vw;
+    max-height: 50vw;
     border: 2px solid #999;
     box-sizing: border-box;
 }

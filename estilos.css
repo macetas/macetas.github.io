@@ -9,20 +9,20 @@ body {
 
 header, #proximamente {
     margin: 40px auto;
-    font-family: 'Cabin Sketch', cursive;
-    line-height: 10vw;
+    font-family: 'Amatic SC', cursive;
+    line-height: 15vw;
+    filter: drop-shadow(0 0 2px #ffd700);
 }
 
 h1 {
     margin: 0;
-    font-size: 10vw;
-    font-weight: 700;
+    font-size: 15vw;
+    font-weight: 400;
 }
 
 header p {
     margin: 0;
-    font-size: 8.4vw;
-    font-weight: 400;
+    font-size: 11.7vw;
 }
 
 iframe {
@@ -37,6 +37,6 @@ iframe {
 }
 
 #proximamente {
-    font-size: 8vw;
     margin: 40px auto;
+    font-size: 10vw;
 }

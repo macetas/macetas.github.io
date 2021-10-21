@@ -1,31 +1,28 @@
 body {
-    margin: 0;
-    padding: 0;
     background-image: url("fondo.jpg");
     background-size: cover;
     background-attachment: fixed;
-    background-position: bottom right;
+    background-position: center center;
+    color: #fff;
+    text-align: center;
 }
 
-h1, h2 {
-  margin: 20px;
-  text-align: center;
-  font-family: 'Amatic SC', cursive;
-  font-weight: 400;
+header, #proximamente {
+    margin: 40px auto;
+    font-family: 'Cabin Sketch', cursive;
+    line-height: 10vw;
 }
 
 h1 {
-  font-size: 14vw;
-  line-height: 14vw;
-  color: #000000;
-  text-shadow: 1px 1px 0 #ffffff;
+    margin: 0;
+    font-size: 10vw;
+    font-weight: 700;
 }
 
-h2 {
-  font-size: 10vw;
-  line-height: 10vw;
-  color: #ffffff;
-  filter: drop-shadow(0 0 4px #ffa500);
+header p {
+    margin: 0;
+    font-size: 8.4vw;
+    font-weight: 400;
 }
 
 iframe {
@@ -33,7 +30,12 @@ iframe {
     margin: 40px auto;
     width: 572px;
     height: 315px;
-    max-width: 96vw;
+    max-width: 94vw;
     max-height: 52vw;
-    border: 1px solid #000;
+    border: 2px solid #999;
+}
+
+#proximamente {
+    font-size: 8vw;
+    margin: 40px auto;
 }

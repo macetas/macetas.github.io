@@ -10,19 +10,24 @@ body {
 header, #proximamente {
     margin: 40px auto;
     font-family: 'Amatic SC', cursive;
-    line-height: 15vw;
-    filter: drop-shadow(0 0 2px #ffd700);
+    filter: drop-shadow(0 0 2px #000);
+}
+
+#macetero {
+  width: 100%;
+  max-width: 586px;
+  height: auto;
 }
 
 h1 {
     margin: 0;
-    font-size: 15vw;
+    font-size: 16vmin;
     font-weight: 400;
 }
 
 header p {
     margin: 0;
-    font-size: 11.7vw;
+    font-size: 12vmin;
 }
 
 iframe {
@@ -38,5 +43,5 @@ iframe {
 
 #proximamente {
     margin: 40px auto;
-    font-size: 10vw;
+    font-size: 10vmin;
 }

@@ -33,6 +33,7 @@ iframe {
     max-width: 94vw;
     max-height: 52vw;
     border: 2px solid #999;
+    box-sizing: border-box;
 }
 
 #proximamente {

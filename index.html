@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Maceteros de Madera Grandes!! Tené tu Huerta en Casa!!</title>
+<title>Macetas de Madera Grandes!! Tené tu Huerta en Casa!!</title>
 <link rel="stylesheet" href="estilos.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,11 +29,11 @@
 </nav>
 <header>
 <div id="header-texto">
-<h1>Maceteros de Madera Grandes!!<br>Tené tu Huerta en Casa!!</h1>
+<h1>Macetas de Madera Grandes!!<br>Tené tu Huerta en Casa!!</h1>
 <ul>
-<li class="disponibles"><a href="#disponibles">Mirá los maceteros disponibles</a></li>
+<li class="disponibles"><a href="#disponibles">Mirá las macetas disponibles</a></li>
 <br>
-<li class="a-medida"><a href="#a-medida">Encargá tu macetero a medida</a></li>
+<li class="a-medida"><a href="#a-medida">Encargá tu maceta a medida</a></li>
 </ul>
 </div>
 <div id="header-imagen">
@@ -41,10 +41,10 @@
 </div>
 </header>
 <section id="disponibles" class="disponibles">
-<h2>Maceteros Disponibles</h2>
+<h2>Macetas Disponibles</h2>
 <div class="contenedor">
 <iframe src="https://www.youtube.com/embed/jg2ZVomqmM4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<p>Mirá abajo las medidas de los productos que ya están terminados y listos para entregarse (tienen todos el mismo diseño). El pedido hay que hacerlo por WhatsApp. Para incorporar los datos de las medidas automáticamente en tu mensaje, tocá el botón "Pedilo!!"</p>
+<p>Mirá abajo las medidas de los productos que ya están terminados y listos para entregarse (tienen todos el mismo diseño). El pedido hay que hacerlo por WhatsApp. Para incorporar los datos de las medidas automáticamente en tu mensaje, tocá el botón "Pedila!!"</p>
 <img src="img/medidas.png">
 <div id="tarjetas"></div>
 <script>
@@ -61,12 +61,12 @@ $.get("https://docs.google.com/spreadsheets/d/1ovMsbPfq_2GjO09izl3EaVMAKbDcj5pax
     var html = "";
 
     if (filas.length == 0) {
-        html = "<p class='nohay'>No hay productos disponibles es este momento (vendimos todo!!). Pero podés encargar un macetero con las medidas que quieras en la sección de abajo!!</p>";
+        html = "<p class='nohay'>No hay productos disponibles es este momento (vendimos todo!!). Pero podés encargar una maceta con las medidas que quieras en la sección de abajo!!</p>";
     }
 
     else {
         for (i=0; i<filas.length; i++) {
-            html += "<div class='tarjeta'><h3>Macetero ";
+            html += "<div class='tarjeta'><h3>Maceta ";
             html += i+1;
             html += "</h3><hr><ul><li><b>Alto:</b> ";
             html += celdas[i][0];
@@ -78,7 +78,7 @@ $.get("https://docs.google.com/spreadsheets/d/1ovMsbPfq_2GjO09izl3EaVMAKbDcj5pax
             html += celdas[i][3];
             html += " cm</li><li class='precio'><b>Precio:</b> $";
             html += celdas[i][4];
-            html += "</li><li class='pedilo'><a href='https://wa.me/5491126478333?text=Hola.%20Quiero%20comprar%20el%20macetero%20con%20medidas:%0aAlto:%20";
+            html += "</li><li class='pedilo'><a href='https://wa.me/5491126478333?text=Hola.%20Quiero%20comprar%20la%20maceta%20con%20medidas:%0aAlto:%20";
             html += celdas[i][0];
             html += " cm%0aLargo: ";
             html += celdas[i][1];
@@ -86,7 +86,7 @@ $.get("https://docs.google.com/spreadsheets/d/1ovMsbPfq_2GjO09izl3EaVMAKbDcj5pax
             html += celdas[i][2];
             html += " cm%0aProfundidad: ";
             html += celdas[i][3];
-            html += " cm' target='_blank'><i class='fa fa-whatsapp' aria-hidden='true'></i>Pedilo!!</a></li></ul></div>";
+            html += " cm' target='_blank'><i class='fa fa-whatsapp' aria-hidden='true'></i>Pedila!!</a></li></ul></div>";
         }
     }
 
@@ -99,9 +99,9 @@ $.get("https://docs.google.com/spreadsheets/d/1ovMsbPfq_2GjO09izl3EaVMAKbDcj5pax
 </div>
 </section>
 <section id="a-medida" class="a-medida">
-<h2>Maceteros a Medida</h2>
+<h2>Macetas a Medida</h2>
 <div class="contenedor">
-<p>Completá abajo los espacios en blanco con las medidas que quieras y tocá el botón "Pedilo!!" para abrir un chat de WhatsApp con las medidas incluidas. La construcción del macetero puede demorar una semana.</p>
+<p>Completá abajo los espacios en blanco con las medidas que quieras y tocá el botón "Pedila!!" para abrir un chat de WhatsApp con las medidas incluidas. La construcción de la maceta puede demorar una semana.</p>
 <img src="img/medidas.png">
 <br>
 <ul>
@@ -109,7 +109,7 @@ $.get("https://docs.google.com/spreadsheets/d/1ovMsbPfq_2GjO09izl3EaVMAKbDcj5pax
 <li><b>Largo:</b> <input id="largo" type="number" min="10" max="200"> cm</li>
 <li><b>Ancho:</b> <input id="ancho" type="number" min="10" max="200"> cm</li>
 <li><b>Profundidad:</b> <input id="profundidad" type="number" min="10" max="200"> cm</li>
-<li class="pedilo"><a><i class='fa fa-whatsapp' aria-hidden='true'></i>Pedilo!!</a></li>
+<li class="pedilo"><a><i class='fa fa-whatsapp' aria-hidden='true'></i>Pedila!!</a></li>
 </ul>
 </div>
 </section>
@@ -128,7 +128,7 @@ $(".a-medida .pedilo").on('click', function(e){
     var ancho = $('#ancho').val();
     var profundidad = $('#profundidad').val();
 
-    var link = "https://wa.me/5491126478333?text=Hola.%20Quiero%20comprar%20un%20macetero%20con%20medidas:%0aAlto: ";
+    var link = "https://wa.me/5491126478333?text=Hola.%20Quiero%20comprar%20una%20maceta%20con%20medidas:%0aAlto: ";
     link += alto;
     link += " cm%0aLargo: ";
     link += largo;
@@ -144,7 +144,7 @@ $(".a-medida .pedilo").on('click', function(e){
 <script>
   var mapa = L.map('mapa').setView([-34.593844, -58.550772], 13);
 
-  L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     minZoom: 10,
     id: 'mapbox/streets-v11',
     tileSize: 512,
